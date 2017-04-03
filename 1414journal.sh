@@ -1,6 +1,6 @@
 #!/bin/sh
 #super simple bash script to create a journal file
-#https://github.com/celsius1414/journal.sh
+#https://github.com/celsius1414/1414journal.sh
 
 #PATHS & SETTINGS
 EDITOR="/usr/bin/vim"
@@ -9,7 +9,9 @@ EXTENSION="md"
 
 
 #AND HERE WE GO
-THISYEAR=$(/bin/date +%Y)
+
+#For four-digit year folders, change the +%y to +%Y
+THISYEAR=$(/bin/date +%y)
 THISMON=$(/bin/date +%m)
 THISDATE=$(/bin/date +%d)
 DESPACED=${1// /-}
