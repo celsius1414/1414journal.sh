@@ -26,6 +26,6 @@ else
     TITLE="$NOWISH-$TITLE"
 fi
 
-/bin/mkdir -p $JOURDIR
-/usr/bin/cd $JOURDIR
+mkdir -p $JOURDIR
+cd $JOURDIR
 $EDITOR $THISMON-$THISDATE-$TITLE.$EXTENSION
